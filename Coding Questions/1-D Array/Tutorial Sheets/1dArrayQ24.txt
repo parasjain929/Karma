@@ -1,0 +1,4 @@
+ptr = (cast-type*) malloc(byte-size)
+
+For Example:
+ptr = (int*) malloc(100 * sizeof(int));
