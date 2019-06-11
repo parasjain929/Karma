@@ -8,21 +8,23 @@ int main()
         for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
-            cin>>a[i][n];
+            cin>>a[i][j];
     }
 
     for(i=1;i<n-1;i++)
     {
+    	temp=0;
         for(j=1;j<n-1;j++)
         {
             for(x=-1;x<=1;x++)
             {
                 for(y=-1;y<=1;y++)
                 {
-                    temp=a[i+x][j+y];
+                    temp+=a[i+x][j+y];
                 }
-                    a[i][j]=temp/9;
+                    
                 }
+                a[i][j]=temp/9;
             }
         }
     for(i=0;i<n;i++)
