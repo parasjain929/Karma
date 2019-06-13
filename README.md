@@ -4,9 +4,10 @@
 Implentation of some Basic Programs of C++ in my Placement Preparation Programme <p>P<sup>3</sup></p>
 
 
-##Week_1
+## Week_1
+
+### Coding_Questions
 ```
-###Coding_Questions
 
 ├──Pattern_&_Series
 ├──Single_Loop
