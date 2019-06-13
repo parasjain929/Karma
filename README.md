@@ -5,6 +5,9 @@
 Implentation of some Basic Programs of C++ in my Placement Preparation Programme <p>P<sup>3</sup></p>
 
 
+
+
+
 ## Week_1
 
 ### Coding_Questions
@@ -28,3 +31,4 @@ Implentation of some Basic Programs of C++ in my Placement Preparation Programme
 ```
 ├──Filters
    ├──Average Filters
+   ├──Sharpening Filter
