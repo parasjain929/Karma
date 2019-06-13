@@ -1,5 +1,5 @@
-﻿# Karma
-" कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥ २-४७"
+﻿# Karma-कर्म|
+<h1 color=”green”>" कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥ २-४७"</h1>
 
 Implentation of some Basic Programs of C++ in my Placement Preparation Programme <p>P<sup>3</sup></p>
 
