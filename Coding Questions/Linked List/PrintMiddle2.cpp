@@ -47,7 +47,7 @@ void printMiddle(node *head)
     node *p1=head,*p2=head;
     if(head!=NULL)
     {
-        while(p2!=NULL && p2->next!=NULL)
+        while(p1!=NULL && p2->next!=NULL && (p2->next)->next!=NULL)
         {
             p1=p1->next;
             p2=p2->next->next;
