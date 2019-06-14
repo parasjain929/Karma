@@ -8,7 +8,7 @@
   <img src="https://github.com/rishabh-bansal/Data-Structures/raw/master/image.jpg">
 </div>
 
-Implentation of some Basic Programs of C++ in my Placement Preparation Programme <p>P<sup>3</sup></p>
+<p>Implentation of some Basic Programs of C++ in my Placement Preparation Programme P<sup>3</sup></p>
 
 
 
