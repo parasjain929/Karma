@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<stack>
 using namespace std;
 class node{
     public:
@@ -32,22 +33,29 @@ void print(node *head)
         print=print->next;
     }
 }
-void Reverse(node **headptr)
+node* Reverse(node *head)
 {
-    node *prev=NULL,*current = *headptr,*right=(*headptr)->next;
-    while(current!=NULL)
+    stack <node*>s;
+    node *temp=head;
+    while(temp->next!=NULL)
     {
-        right=current->next;
-        current->next=prev;
-        prev=current;
-        current=right;
+        s.push(temp);
+        temp=temp->next;
     }
-    *headptr=prev;
+    head=temp;
+    while(!s.empty())
+    {
+        temp->next=s.top();
+        s.pop();
+        temp=temp->next;
+    }
+    temp->next=NULL;
+    return head;
 }
 int main()
 {
         int n,v;
-        node *head=NULL;
+        node *head=NULL,*print1;
         cout<<"Enter no. of Values";
         cin>>n;
         while(n)
@@ -59,9 +67,9 @@ int main()
         }
         cout<<"Entered List Is"<<endl;
         print(head);
-        Reverse(&head);
+        print1=Reverse(head);
         cout<<"Reverse List Is"<<endl;
-        print(head);
+        print(print1);
 }
 
 
