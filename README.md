@@ -14,7 +14,6 @@
 
 
 
-## Week_1
 
 ### Coding_Questions
 ```
@@ -28,6 +27,9 @@
 ├──Strings
 ├──Recurion
 ├──Linked_lists
+├──Stacks
+├──Backtracking
+├──Binary Trees
 ```
 
 
