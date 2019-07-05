@@ -1,3 +1,5 @@
+
+
 #include<bits/stdc++.h>
 using namespace std;
 int issafe(int maze[4][4],int x,int y, int n)
@@ -14,18 +16,19 @@ int solvemaze(int maze[4][4], int x, int y, int n)
         }
     if(issafe(maze,x,y+1,n)==1) //right
     {
-        y=y+1;
-        cout<<"y is"<<y<<endl;
-        solvemaze(maze,x,y,n);
+        maze[x][y]=-1;
+        cout<<"y is"<<x<<" "<<y<<endl;
+        if(solvemaze(maze,x,y+1,n))
+            return 1;
     }
-    else if(issafe(maze,x+1,y,n)==1) //downward
+    if(issafe(maze,x+1,y,n)==1) //downward
     {
-        x=x+1;
-        cout<<"x is"<<x<<endl;
-        solvemaze(maze,x,y,n);
+        maze[x][y]=-1;
+        cout<<"x is"<<x<<" "<<y<<endl;
+        if(solvemaze(maze,x+1,y,n))
+            return 1;
     }
-    else
-        return 0;
+    return 0;
 
 }
 int main()
@@ -33,13 +36,13 @@ int main()
     int n;
     cout<<"Enter Size of Matrix";
     cin>>n;
-    int maze[4][4];
+    int maze[4][4]={{1,1,0,0},{0,1,1,1},{0,0,1,0},{0,1,1,1}};
     int i,j;
-    for(i=0;i<n;i++)
+    /*for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
             cin>>maze[i][j];
-    }
+    }*/
     int c=solvemaze(maze,0,0,n);
     cout<<c;
 
